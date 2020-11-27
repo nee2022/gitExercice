@@ -19,14 +19,18 @@
           <span class="font">平台管理</span>
         </div>
         <div class="platform margin" v-show="change">
-          <div class="platform-money a">
-            <img src="../assets/images/money.png" alt="" />
-            <span>会员资产</span>
-          </div>
-          <div class="platform-money a">
-            <img src="../assets/images/pos.png" alt="" />
-            <span>商户资产</span>
-          </div>
+          <router-link to="/summary/userAssets">
+            <div class="platform-money a">
+              <img src="../assets/images/money.png" alt="" />
+              <span>会员资产</span>
+            </div>
+          </router-link>
+          <router-link to="/summary/merchantAssets">
+            <div class="platform-money a">
+              <img src="../assets/images/pos.png" alt="" />
+              <span>商户资产</span>
+            </div>
+          </router-link>
           <div class="platform-money a">
             <img src="../assets/images/finance.png" alt="" />
             <span>财务管理</span>
@@ -43,12 +47,12 @@
             <img src="../assets/images/system.png" alt="" />
             <span>系统运维</span>
           </div>
-<router-link to="/summary/ito">
+          <router-link to="/summary/ito">
             <div class="platform-money a">
-            <img src="../assets/images/centre.png" alt="" />
-            <span>物联中心</span>
-          </div>
-</router-link>
+              <img src="../assets/images/centre.png" alt="" />
+              <span>物联中心</span>
+            </div>
+          </router-link>
           <div class="platform-money a">
             <img src="../assets/images/service.png" alt="" />
             <span>客户服务</span>
@@ -189,7 +193,7 @@ export default {
       change2: false,
       change3: false,
       change4: false,
-      change5: false,
+      change5: false
     };
   },
   methods: {
@@ -233,8 +237,8 @@ export default {
     },
     leave5() {
       this.change5 = false;
-    },
-  },
+    }
+  }
 };
 </script>
 
