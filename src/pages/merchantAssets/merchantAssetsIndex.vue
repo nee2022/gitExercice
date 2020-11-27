@@ -1,12 +1,12 @@
 <template>
-  <wraper>
+  <div class="wrapper">
     <aside>
       123
     </aside>
     <section>
       123
     </section>
-  </wraper>
+  </div>
 </template>
 
 <script>
@@ -21,15 +21,14 @@ px(a)
   padding 0
 
 aside
-  float left 
-  border 1px solid black
+  float left
+  // border 1px solid black
   width px(280)
   height 100vh
 
 section
   float right
-  border 1px solid black
+  // border 1px solid black
   width  px(1640)
   height 100vh
-  
 </style>
