@@ -7,4 +7,4 @@ six
 7
 eight
 9
-0
+zero
